@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+streamlit
+supabase
+pandas
+requests
+python-dotenv
