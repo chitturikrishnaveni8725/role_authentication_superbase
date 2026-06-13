@@ -7,8 +7,8 @@ import pandas as pd
 # load_dotenv()
 
 # BASE_URL = os.getenv("BASE_URL")
-# BASE_URL = st.secrets["BASE_URL"]
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = st.secrets["BASE_URL"]
+# BASE_URL = "http://127.0.0.1:8000"
 
 if "user" not in st.session_state:
     st.session_state["user"] = None
