@@ -3,23 +3,15 @@ from pydantic import BaseModel
 from supabase import create_client
 from datetime import datetime
 from dotenv import load_dotenv
-import os
-load_dotenv()
-
+import os  
+load_dotenv()  
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-
 app = FastAPI()
-
-
-
-
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-
-
 class RegisterModel(BaseModel):
     id: str
-    name: str
+    name: str   
     email: str
     password: str
     role: str

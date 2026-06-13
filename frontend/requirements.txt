@@ -1,7 +1,4 @@
-fastapi
-uvicorn
 streamlit
-supabase
-pandas
 requests
+pandas
 python-dotenv
